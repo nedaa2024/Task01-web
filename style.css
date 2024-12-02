@@ -22,10 +22,10 @@ nav {
   padding: 0 10px; /* Adjust padding to prevent horizontal scroll */
   line-height: 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .logo img {
@@ -41,7 +41,7 @@ nav {
 
 .search-container input {
   border-radius: 16px;
-  padding: 5px 10px 5px 40px; 
+  padding: 5px 10px 5px 10px; 
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
@@ -49,11 +49,12 @@ nav {
 .search-container .search-btn {
   position: absolute;
   right: 5px;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
   cursor: pointer;
+  /* display: none; */
 }
 
 .search-container .search-btn img {
@@ -104,7 +105,8 @@ button img {
       padding: 15px 10px; /* Adjust padding for smaller screens */
   }
   .search-container input {
-      display: none;
+      width: 95%;
+      border: none;
   }
   .logo img {
       width: 120px;
@@ -151,7 +153,7 @@ button img {
       display: none;
   }
   .nav-right a {
-      font-size: 22px; /* Reduce font size for small screens */
+      font-size: 16px; /* Reduce font size for small screens */
   }
   .cart-btn{ 
     background-color: transparent;
@@ -168,6 +170,8 @@ button img {
   }
   nav {
       flex-direction: row;
+      align-items: center;
+      align-content: center;
   }
   .nav-right ul {
       flex-direction: row;
@@ -179,8 +183,9 @@ button img {
       margin-bottom: 0;
   }
   .logo img {
-      width: 80px;
-      height: 30px;
+      width: 87px;
+      height: 29px;
+      margin-top: 8px;
   }
   .search-container .search-btn img {
       width: 25px;
@@ -210,9 +215,131 @@ button img {
 }
 }
 
+@media (min-width: 480px) and (max-width: 705px) {
+ 
+  .search-container input {
+    width: 75%;
+}
 
-/*-----------------------------------------*/
+.nav-right a {
+    font-size: 10px;
+}
 
+.dash{
+  font-size: 10px;
+}
+.search-container .search-btn img{}
+.search-container .search-btn {
+  border: none;
+  left: 88px;
+}
+}
+
+@media (min-width: 480px) and (max-width: 630px) {
+ 
+  .search-container input {
+    width: 122%;
+    height: 28px;
+    font-size: 11px;
+}
+
+.nav-right a {
+    font-size: 10px;
+}
+
+.dash{
+  font-size: 10px;
+}
+.search-container .search-btn img{
+    width: 15px;
+    height: 15px;
+}
+.search-container .search-btn {
+  border: none;
+  left: -34px;
+  top: 22px;
+  display: none;
+}
+
+.search-container{
+    width: 15%;
+}
+}
+
+
+@media (min-width: 400px) and (max-width: 550px) {
+ 
+  .search-container input {
+    width: 102%;
+    height: 28px;
+    font-size: 11px;
+}
+
+.nav-right a {
+    font-size: 10px;
+}
+
+.dash{
+  font-size: 10px;
+}
+.search-container .search-btn img{
+    width: 15px;
+    height: 15px;
+}
+.search-container .search-btn {
+  border: none;
+  left: 15px;
+  top: 22px;
+}
+
+.search-container{
+    width: 19%;
+}
+}
+
+
+
+@media  (max-width: 400px) {
+ 
+  .search-container input {
+    width: 94%;
+    height: 21px;
+    font-size: 7px;
+}
+
+.nav-right a {
+    font-size: 10px;
+}
+
+.dash{
+  font-size: 10px;
+}
+.search-container .search-btn img{
+    width: 13px;
+    height: 13px;
+    /* display: none; */
+}
+.search-container .search-btn {
+  border: none;
+  left: -5px;
+  top: 23px;
+}
+
+.search-container{
+    width: 19%;
+}
+.logo img{
+
+width: 50px;
+
+height: 19px;
+
+margin-top: 19px;
+}
+
+.cart-btn {width: 10%;border: none;}
+.cart-btn img {width: 15px;height: 15px;border: none;}
+}
 /* ***************************** */
 /* Banner styles */
 
