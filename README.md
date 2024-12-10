@@ -30,8 +30,8 @@ Here are the screenshots of my results from the CSS games:
 <img src="images/FlexBox-Froggy-game.png" alt="css froggy game" width="400" height="200">
 
 ## Try the Games Yourself
-- [CSS Plate](https://cssplate.com)
-- [CSS Froggy](https://cssfroggy.com)
+- [CSS Plate](https://flukeout.github.io/)
+- [CSS Froggy](https://flexboxfroggy.com/)
 
 
 ## Usage
