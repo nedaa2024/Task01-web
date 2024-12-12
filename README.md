@@ -16,7 +16,7 @@ Here is the wireframe we are starting with:
 
 
 ## Live Demo
-Check out the live demo of the project [here](https://nedaa2024.github.io/Task01-web/).
+Check out the live demo of the project [here](https://radiant-daffodil-c622ef.netlify.app/).
 
 
 
